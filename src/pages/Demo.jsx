@@ -46,7 +46,7 @@ function Demo() {
   });
 
   return (
-    <div className="container mx-auto px-4">
+    <div className="container min-h-screen flex flex-col justify-center items-center mx-auto px-4">
       <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="max-w-6xl mx-auto">
         <h2 className="text-4xl font-bold mb-8 text-center">Image Enhancement Demo</h2>
 

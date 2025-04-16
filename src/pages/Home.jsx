@@ -78,7 +78,7 @@ function Home() {
         ))}
       </motion.div>
 
-      <div className="py-20 bg-gray-50 dark:bg-gray-900 -mx-4 px-4">
+      <div className="py-20 bg-white-50 dark:bg-black-900 -mx-4 px-4">
         <div className="max-w-4xl mx-auto">
           <motion.h2 
             className="text-4xl font-bold mb-12 text-center"
@@ -115,9 +115,9 @@ function Home() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.2 * index }}
-                className="p-6 rounded-lg bg-white dark:bg-black border border-black/10 dark:border-white/10"
+                className="p-6 flex flex-col items-center justify-center text-center h-full rounded-lg bg-white dark:bg-black border border-black/10 dark:border-white/10"
               >
-                {feature.icon}
+                <span className="flex justify-center justify center">{feature.icon}</span>
                 <h3 className="text-xl font-bold mb-2">{feature.title}</h3>
                 <p className="text-gray-600 dark:text-gray-400">{feature.description}</p>
               </motion.div>
